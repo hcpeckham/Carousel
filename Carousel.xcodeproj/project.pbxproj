@@ -14,6 +14,9 @@
 		39F5F5371C6D5CE200796C7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F5F5351C6D5CE200796C7E /* LaunchScreen.storyboard */; };
 		39F5F5421C6D5CE300796C7E /* CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F5411C6D5CE300796C7E /* CarouselTests.swift */; };
 		39F5F54D1C6D5CE300796C7E /* CarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F54C1C6D5CE300796C7E /* CarouselUITests.swift */; };
+		39F5F55B1C6D5D8000796C7E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F55A1C6D5D8000796C7E /* Common.swift */; };
+		39F5F55F1C6E78B000796C7E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F55E1C6E78B000796C7E /* LoginViewController.swift */; };
+		39F5F5611C6E96F800796C7E /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F5601C6E96F800796C7E /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		39F5F5481C6D5CE300796C7E /* CarouselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F5F54C1C6D5CE300796C7E /* CarouselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselUITests.swift; sourceTree = "<group>"; };
 		39F5F54E1C6D5CE300796C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39F5F55A1C6D5D8000796C7E /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		39F5F55E1C6E78B000796C7E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		39F5F5601C6E96F800796C7E /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,10 @@
 		39F5F52B1C6D5CE200796C7E /* Carousel */ = {
 			isa = PBXGroup;
 			children = (
-				39F5F52C1C6D5CE200796C7E /* AppDelegate.swift */,
-				39F5F52E1C6D5CE200796C7E /* ViewController.swift */,
 				39F5F5301C6D5CE200796C7E /* Main.storyboard */,
+				39F5F5621C6E977400796C7E /* ViewControllers */,
+				39F5F55A1C6D5D8000796C7E /* Common.swift */,
+				39F5F52C1C6D5CE200796C7E /* AppDelegate.swift */,
 				39F5F5331C6D5CE200796C7E /* Assets.xcassets */,
 				39F5F5351C6D5CE200796C7E /* LaunchScreen.storyboard */,
 				39F5F5381C6D5CE200796C7E /* Info.plist */,
@@ -123,6 +130,16 @@
 				39F5F54E1C6D5CE300796C7E /* Info.plist */,
 			);
 			path = CarouselUITests;
+			sourceTree = "<group>";
+		};
+		39F5F5621C6E977400796C7E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				39F5F52E1C6D5CE200796C7E /* ViewController.swift */,
+				39F5F5601C6E96F800796C7E /* IntroViewController.swift */,
+				39F5F55E1C6E78B000796C7E /* LoginViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F5F5611C6E96F800796C7E /* IntroViewController.swift in Sources */,
 				39F5F52F1C6D5CE200796C7E /* ViewController.swift in Sources */,
 				39F5F52D1C6D5CE200796C7E /* AppDelegate.swift in Sources */,
+				39F5F55B1C6D5D8000796C7E /* Common.swift in Sources */,
+				39F5F55F1C6E78B000796C7E /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +502,7 @@
 				39F5F5531C6D5CE300796C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F5F5541C6D5CE300796C7E /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +511,7 @@
 				39F5F5561C6D5CE300796C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F5F5571C6D5CE300796C7E /* Build configuration list for PBXNativeTarget "CarouselUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +520,7 @@
 				39F5F5591C6D5CE300796C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
