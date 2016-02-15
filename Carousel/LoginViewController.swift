@@ -22,6 +22,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     var buttonOffset: CGFloat!
 
     
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +38,11 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
+        
+        // add the cancel action to the AlertControllers
+        
+       
 
     }
     
@@ -70,6 +76,46 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     }
 
     
+
+    
+    
+    @IBAction func onBackTap(sender: AnyObject) {
+        navigationController!.popViewControllerAnimated(true)
+    }
+    
+    
+    
+    @IBAction func didPressLoginButton(sender: AnyObject) {
+        self.signInIndicator.startAnimating()
+        signInButton.selected = true
+        
+        
+        delay(2) { () -> () in
+            self.signInIndicator.stopAnimating()
+            
+            if self.emailField.text!.isEmpty || self.passwordField.text!.isEmpty {
+                let alertEmptyController = UIAlertController(title: "Enter email or password", message: "Please enter a valid email and password", preferredStyle: .Alert)
+                let OKAction = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+                })
+                alertEmptyController.addAction(OKAction)
+                self.presentViewController(alertEmptyController, animated: true, completion: { (action) -> Void in
+                })
+
+                
+            } else if self.emailField.text == "hp" && self.passwordField.text == "pw" {
+                self.performSegueWithIdentifier("loginSegue", sender: nil)
+            } else {
+                let alertController = UIAlertController(title: "Invalid email or password", message: "Please enter a valid email and password", preferredStyle: .Alert)
+                let OKAction = UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+                })
+                alertController.addAction(OKAction)
+                self.presentViewController(alertController, animated: true, completion: { (action) -> Void in
+                })
+            }
+        }
+
+        
+    }
     
     
 

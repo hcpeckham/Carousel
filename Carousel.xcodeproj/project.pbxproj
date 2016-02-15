@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393550FE1C6FF40900F84A4E /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393550FD1C6FF40900F84A4E /* TimeLineViewController.swift */; };
+		393551001C6FF9C600F84A4E /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393550FF1C6FF9C600F84A4E /* ConversationsViewController.swift */; };
+		393551021C6FFE1800F84A4E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393551011C6FFE1800F84A4E /* SettingsViewController.swift */; };
+		393A58951C6FCF9E0033B24B /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393A58941C6FCF9E0033B24B /* TutorialViewController.swift */; };
 		39F5F52D1C6D5CE200796C7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F52C1C6D5CE200796C7E /* AppDelegate.swift */; };
 		39F5F52F1C6D5CE200796C7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5F52E1C6D5CE200796C7E /* ViewController.swift */; };
 		39F5F5321C6D5CE200796C7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39F5F5301C6D5CE200796C7E /* Main.storyboard */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		393550FD1C6FF40900F84A4E /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		393550FF1C6FF9C600F84A4E /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		393551011C6FFE1800F84A4E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		393A58941C6FCF9E0033B24B /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		39F5F5291C6D5CE200796C7E /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F5F52C1C6D5CE200796C7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39F5F52E1C6D5CE200796C7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +143,10 @@
 		39F5F5621C6E977400796C7E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				393551011C6FFE1800F84A4E /* SettingsViewController.swift */,
+				393550FF1C6FF9C600F84A4E /* ConversationsViewController.swift */,
+				393550FD1C6FF40900F84A4E /* TimeLineViewController.swift */,
+				393A58941C6FCF9E0033B24B /* TutorialViewController.swift */,
 				39F5F52E1C6D5CE200796C7E /* ViewController.swift */,
 				39F5F5601C6E96F800796C7E /* IntroViewController.swift */,
 				39F5F55E1C6E78B000796C7E /* LoginViewController.swift */,
@@ -275,9 +287,13 @@
 			files = (
 				39F5F5611C6E96F800796C7E /* IntroViewController.swift in Sources */,
 				39F5F52F1C6D5CE200796C7E /* ViewController.swift in Sources */,
+				393550FE1C6FF40900F84A4E /* TimeLineViewController.swift in Sources */,
+				393551001C6FF9C600F84A4E /* ConversationsViewController.swift in Sources */,
 				39F5F52D1C6D5CE200796C7E /* AppDelegate.swift in Sources */,
 				39F5F55B1C6D5D8000796C7E /* Common.swift in Sources */,
+				393A58951C6FCF9E0033B24B /* TutorialViewController.swift in Sources */,
 				39F5F55F1C6E78B000796C7E /* LoginViewController.swift in Sources */,
+				393551021C6FFE1800F84A4E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
