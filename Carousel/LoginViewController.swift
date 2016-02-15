@@ -87,8 +87,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func didPressLoginButton(sender: AnyObject) {
         self.signInIndicator.startAnimating()
-        signInButton.selected = true
-        
+               
         
         delay(2) { () -> () in
             self.signInIndicator.stopAnimating()
